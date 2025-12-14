@@ -10,13 +10,13 @@
 }
 :root {
     --bg-color: #151f28;
-    --main-color: #939114;
+    --main-color: #ab8942;
     --text-color: #333;
     --second-text-color: #555;
     --white-color:#fff;
-    --cover-color:linear-gradient(45deg, #edecb1, #889a00);
+    --cover-color:linear-gradient(45deg, #ab8942, #edecb1);
     --pages-color:linear-gradient(90deg, #fff, #ddd);
-    --border: 0.125rem solid #f7f452;
+    --border: 0.125rem solid #604815;
     --box-shadow: 0 0 0.8rem rgba(0,0,0,0.2);
 
 }
@@ -56,7 +56,7 @@ body{
     width: 50%;
     height: 100%;
     background-color: var(--cover-color);
-    background-color: #a9bb01b0;
+    background-color: #ab8942;
     box-shadow: var(--box-shadow);
     border-top-left-radius: 0.6rem;
     border-bottom-left-radius: 0.6rem;
