@@ -10,6 +10,9 @@
   <!-- style -->
   <link rel="stylesheet" href="style.css" />
   <!-- js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script defer src="./contact.js"></script>
+
   <script defer src="script.js"></script>
 </head>
 
@@ -40,14 +43,12 @@
 
           <div class="btn-box">
             <div class="contact-group">
-              <a href="mailto:nicolasmunoz@nilotech.online?subject=Consulta%20NiloTech&body=Hola,%20quiero%20hacer%20una%20consulta"
-                class="btn">Contactá a Nico</a>
+              <a href="#" class="btn">Contactá a Nico</a>
               <a href="https://wa.me/5491121585424?text=Hola%20quiero%20más%20información%20sobre%20tus%20servicios."><i
                   class="bx bxl-whatsapp"></i></a>
             </div>
             <div class="contact-group">
-              <a href="mailto:lorenafusillo@nilotech.online?subject=Consulta%20NiloTech&body=Hola,%20quiero%20hacer%20una%20consulta"
-                class="btn contact-me">Contactá a Lore</a>
+              <a href="#" class="btn contact-me">Contactá a Lore</a>
               <a href="https://wa.me/5491121882339?text=Hola%20quiero%20más%20información%20sobre%20tus%20servicios."><i
                   class="bx bxl-whatsapp"></i></a>
             </div>
@@ -301,10 +302,10 @@
           <h1 class="title">Contactanos!</h1>
 
           <div class="contact-box">
-            <form action="">
-              <input type="text" class="field" placeholder="Nombre completo" required>
-              <input type="email" class="field" placeholder="Email" required>
-              <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Tu mensaje"></textarea>
+            <form action="" id="contact-form">
+              <input type="text" name="nombre" class="field" required>
+              <input type="email" name="email" class="field" required>
+              <textarea name="mensaje" class="field" required></textarea>
               <input type="submit" value="Enviar" class="btn">
             </form>
           </div>

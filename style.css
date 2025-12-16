@@ -566,6 +566,13 @@ body{
         height: auto;
     }
 
+    /* Add separator between front and back pages (e.g. Experience / Education) */
+    .book-page .page-front {
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid rgba(0,0,0,0.1);
+    }
+
     /* Adjust specific sections */
     .profile-page {
         margin-bottom: 2rem;
