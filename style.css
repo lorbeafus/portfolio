@@ -116,7 +116,8 @@ body{
 .profile-page .social-media {
     margin: -1rem .8rem .6rem;
 }
-.profile-page .social-media a{
+.profile-page .social-media a,
+.profile-page .btn-box a:not(.btn) {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +132,8 @@ body{
     transition: .5s;
 
 }
-.profile-page .social-media a:hover{
+.profile-page .social-media a:hover,
+.profile-page .btn-box a:not(.btn):hover {
     background-color: var(--main-color);
     color: var(--white-color);
 }
@@ -157,15 +159,33 @@ body{
     margin: 0 1rem;
     transition: .5s;
 }
-.btn-box .btn:nth-child(2){
+/* Button styles refactored */
+.btn-box {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.contact-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+/* Nico's button (default primary) hover effect */
+.contact-group .btn:not(.contact-me):hover {
     background: transparent;
     color: var(--main-color);
 }
-.btn-box .btn:nth-child(1):hover{
+
+/* Lore's button (secondary style) */
+.btn.contact-me {
     background: transparent;
     color: var(--main-color);
 }
-.btn-box .btn:nth-child(2):hover{
+
+.btn.contact-me:hover {
     background: var(--main-color);
     color: var(--white-color);
 }
@@ -487,3 +507,5 @@ body{
     transform: translateX(-50%) scale(1);
     top: -1.8rem;
 }
+
+/* New row layouts for contact buttons removed, replaced by contact-group above */
