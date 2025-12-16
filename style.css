@@ -509,4 +509,94 @@ body{
     top: -1.8rem;
 }
 
-/* New row layouts for contact buttons removed, replaced by contact-group above */
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto; /* Enable vertical scrolling */
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: auto;
+        padding: 0 1rem;
+        perspective: none; /* Remove 3D perspective */
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .cover {
+        display: none; /* Hide cover */
+    }
+
+    .book {
+        display: flex;
+        flex-direction: column; /* Stack pages vertically */
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        perspective: none;
+    }
+
+    .book .book-page {
+        position: relative; /* Remove absolute positioning */
+        width: 100%;
+        height: auto;
+        display: block; /* Ensure pages take full width */
+        background: var(--pages-color);
+        box-shadow: none;
+        padding: 2rem 1rem;
+        transform: none !important; /* Force remove 3D transforms */
+        border-bottom: 2px solid rgba(0,0,0,0.1); /* Separator between pages */
+    }
+
+    .book-page.page-left,
+    .book-page.page-right {
+        position: relative;
+        transform: none;
+    }
+    
+    .book-page .page-front,
+    .book-page .page-back {
+        position: relative;
+        transform: none !important;
+        padding: 0;
+        height: auto;
+    }
+
+    /* Adjust specific sections */
+    .profile-page {
+        margin-bottom: 2rem;
+    }
+
+    .workeduc-box {
+        margin-top: 1rem;
+    }
+
+    .services-box, .skills-box, .portfolio-box {
+        margin-top: 1rem;
+    }
+    
+    .number-page,
+    .nextprev-btn {
+        display: none; /* Hide navigation buttons and page numbers */
+    }
+
+    .back-profile {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 2rem;
+        width: 100%;
+        border-radius: .3rem;
+    }
+    
+    .back-profile p {
+        position: static;
+        opacity: 1;
+        transform: none;
+        margin-right: 0.5rem;
+    }
+}
