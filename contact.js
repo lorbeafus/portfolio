@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     submitBtn.disabled = true;
 
     emailjs.sendForm(
-      "service_z185xlf",   // Service ID
-      "template_wif78ek",       // Template ID
+      "service_bnvn7b9",
+      "template_wif78ek",
       this
     )
     .then(() => {
